@@ -1,0 +1,155 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: linear-gradient(to bottom right, #faf5ff, #fce7f3);
+  }
+  
+  .formCard {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 28rem;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .icon {
+    width: 3rem;
+    height: 3rem;
+    color: var(--color-purple);
+    margin: 0 auto 0.5rem;
+  }
+  
+  .title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: var(--color-gray-800);
+    margin: 0;
+  }
+  
+  .subtitle {
+    color: var(--color-gray-600);
+    margin: 0.5rem 0 0;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .formGroup {
+    position: relative;
+  }
+  
+  .label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-gray-700);
+    margin-bottom: 0.25rem;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: var(--color-purple);
+    box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.2);
+  }
+  
+  .passwordInput {
+    padding-right: auto;
+  }
+  
+  .togglePassword {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--color-gray-600);
+    cursor: pointer;
+  }
+  
+  .togglePassword:hover {
+    color: var(--color-gray-700);
+  }
+  
+  .error {
+    color: var(--color-red-500);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .strengthIndicator {
+    margin-top: 0.5rem;
+  }
+  
+  .strengthBar {
+    height: 0.5rem;
+    width: 100%;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    overflow: hidden;
+  }
+  
+  .strengthBarFill {
+    height: 100%;
+    transition: all 0.3s;
+  }
+  
+  .strengthBarFill.weak { background-color: var(--color-red-500); }
+  .strengthBarFill.fair { background-color: var(--color-orange-500); }
+  .strengthBarFill.good { background-color: var(--color-yellow-500); }
+  .strengthBarFill.strong { background-color: var(--color-green-500); }
+  
+  .strengthText {
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+    margin-top: 0.25rem;
+  }
+  
+  .submitButton {
+    width: 100%;
+    background-color: var(--color-purple);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submitButton:hover {
+    background-color: var(--color-purple-dark);
+  }
+  
+  .submitButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px var(--color-purple);
+  }
+  
+  .successMessage {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: var(--color-green-100);
+    color: var(--color-green-700);
+    border-radius: 0.5rem;
+    text-align: center;
+  }
